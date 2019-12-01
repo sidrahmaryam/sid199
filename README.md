@@ -62,7 +62,6 @@ for i in range(len(hemetvalue)-1):
     hemetvalue[i]=hemetvalue[i]/hvalue
     
     
-    
 import numpy as np
 qxvaluekeratin =[]
 qyvaluekeratin =[]
