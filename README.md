@@ -76,20 +76,20 @@ from sympy import *
 import math
 
 for i in range(len(xkeratin)-1):
-    x = xkeratin[i]/kertvalue[i]
+    x = diff(xkeratin[i])/diff(kertvalue[i])
     xn = norm(x)
     xden=math.sqrt(xn)
     final = x/xden
     qxvaluekeratin.append(final)
     
     
-    y = ykeratin[i]/kertvalue[i]
+    y = diff(ykeratin[i])/diff(kertvalue[i])
     yn = norm(y)
     yden=math.sqrt(yn)
     final1 = y/yden
     qyvaluekeratin.append(final1)
     
-    z = zkeratin[i]/kertvalue[i]
+    z = diff(zkeratin[i])/diff(kertvalue[i])
     zn = norm(z)
     zden=math.sqrt(zn)
     final2 = z/zden
@@ -97,20 +97,20 @@ for i in range(len(xkeratin)-1):
     
     
 for i in range(len(xheme)-1):
-    x = xheme[i]/hemetvalue[i]
+    x = diff(xheme[i])/diff(hemetvalue[i])
     xn = norm(x)
     xden=math.sqrt(xn)
     final = x/xden
     qxvalueheme.append(final)
     
-    y = yheme[i]/hemetvalue[i]
+    y = diff(yheme[i])/diff(hemetvalue[i])
     yn = norm(y)
     yden=math.sqrt(yn)
     final1 = y/yden
     qyvalueheme.append(final1)
     
     
-    z = zheme[i]/hemetvalue[i]
+    z = diff(zheme[i])/diff(hemetvalue[i])
     zn = norm(z)
     zden=math.sqrt(zn)
     final2 = z/zden
